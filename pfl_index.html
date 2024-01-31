@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pfl_style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>John Applegate Portfolio</title>
-    <script src="script.js" defer></script>
+    <script src="pfl_script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins&family=Public+Sans:wght@300;400&family=Quicksand&family=Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<div class="container">
+<div>
     <header class="hdr">
 
-        <div class="name">
-            <h1>John Applegate</h1>
+        <div id="name" class="animate__animated animate__fadeInDown">
+            John Applegate
         </div>
     
-        <div class="role">
+        <div id="role" class="animate__animated animate__fadeInUp">
             JUNIOR WEB DEVELOPER
         </div>
         
@@ -30,22 +31,28 @@
     <section class="aboutContainer">
 
         <div>
-            <h1 class="greyTitle">ABOUT</h1>
+            <h1 class="greyTitle animate__animated animate__fadeInLeft" id="about">I AM...</h1>
         </div>
+        
         <div class="blurbContainer">
-            <div class="myBlurb">London based coder, passionate about all things tech. Focused on front-end development and javascript funtionality. 
+            <div class="myBlurb">A London-based coder, design junkie, photographer & vintage guitar enthusiast! <br>Passionate about all things tech. Focused on front-end development and javascript funtionality. 
                 <!-- <a href="mycv.com" target="_blank">Check out my CV!</a> -->
             </div>
         </div>
+    
     </section>
 
-    <div class="spacer"></div>
+    <div class="spacer">
+        <!-- <div class="greyTitle project_content show" id="project_title">PROJECTS</div> -->
+    </div>
     
+
     <article class="project_section">
 
         <section class="project_container" id="arcade">
-            <div class="pjt_no">01</div>
-            <div class="content">
+            
+            <div class="project_content show">
+                <div class="pjt_no">01.</div>
                 <div class="site_name">Space Invaders</div>
                 <div class="description">Retro space invaders game</div>
                 <div class="features">Key features: responsive, carousel, form, iframe, api.</div>
@@ -55,12 +62,25 @@
                     <img src="/javascript-1.svg" alt="" width="25px" height="25px">
                 </div>
             </div>
-            <!-- <div class="link"><a href="miamibites.co.uk" target="_blank">link text</a></div> -->
+            
+            <div id="phones_container">
+                <a href="https://johnapplegate.github.io/space_invaders/" onclick="window.open(this.href); return false;">
+                    <img class="screen1" src="screenScreenshots/Screenshot 2024-01-31 at 14.18.42.png" alt="Description of the image">
+                </a>
+                <a href="https://github.com/johnApplegate/space_invaders/blob/main/script.js/" onclick="window.open(this.href); return false;">
+                    <img class="screen2" src="screenScreenshots/Screenshot_SIcode.png" alt="Description of the image">
+                </a>
+                <a href="https://github.com/johnApplegate/space_invaders" onclick="window.open(this.href); return false;">
+                    <img class="screen3" src="screenScreenshots/Screenshot_SIgit.png" alt="Description of the image">
+                </a>
+            </div>
+            
         </section>
 
-        <section class="project_container" id="thumkit">    
-            <div class="pjt_no">02</div>
-            <div class="content">
+        <section class="project_container" id="thumbkit"> 
+
+            <div class="project_content show">
+                <div class="pjt_no">02.</div>
                 <div class="site_name">Thumb-kit</div>
                 <div class="description">Interactive keyboard triggered realtime drum machine</div>
                 <div class="features">Key Features: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, quaerat?</div>
@@ -70,28 +90,84 @@
                     <img src="/javascript-1.svg" alt="" width="25px" height="25px">
                 </div>
             </div>
-            <!-- <div class="link"><a href3="miamibites.co.uk" target="_blank">link text</a></div> -->
+            
+            <div id="phones_container">
+                <a href="https://johnapplegate.github.io/thumbKit/" onclick="window.open(this.href); return false;">
+                    <img class="screen1" src="screenScreenshots/ScreenshotTKgame.png" alt="Description of the image">
+                </a>
+                <a href="https://github.com/johnApplegate/thumbKit/blob/main/index.html" onclick="window.open(this.href); return false;">
+                    <img class="screen2" src="screenScreenshots/ScreenshotTKcode.png" alt="Description of the image">
+                </a>
+                <a href="https://github.com/johnApplegate/thumbKit" onclick="window.open(this.href); return false;">
+                    <img class="screen3" src="screenScreenshots/ScreenshotTKgit.png" alt="Description of the image">
+                </a>
+            </div>
+
         </section>
 
         <section class="project_container" id="tattoo">
-            <div class="pjt_no">03</div>
-            <div class="content">
-                <div class="site_name">Phoebe Bridges</div>
-                <div class="description">Business website for tattoist</div>
-                <div class="features">Key Features: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur odio porro repudiandae?</div>
+
+            <div class="project_content show">
+                <div class="pjt_no">03.</div>
+                <div class="site_name">P.T. Ink</div>
+                <div class="description">Brochure and booking website for independent tattoo artist</div>
+                <div class="features">Key Features: Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Aspernatur odio porro repudiandae?</div>
                 <div class="tech used">
                     <img src="/HTML5_Badge.svg.png" alt="" width="25px" height="25px">
                     <img src="/CSS3_logo.svg.png" alt="" width="25px" height="25px">
                     <img src="/javascript-1.svg" alt="" width="25px" height="25px">
                 </div>
             </div>
-            <!-- <div class="link"><a href="miamibites.co.uk" target="_blank">link text</a></div> -->
+
+            <div id="phones_container">
+                <a href="https://johnapplegate.github.io/phoebeTattooist/" onclick="window.open(this.href); return false;">
+                    <img class="screen1" src="screenScreenshots/screenshotPT_hero.png" alt="Description of the image">
+                </a>
+                <a href="https://johnapplegate.github.io/phoebeTattooist/" onclick="window.open(this.href); return false;">
+                    <img class="screen1" src="screenScreenshots/screenshotPT_cover.png" alt="Description of the image">
+                </a>
+                <a href="https://github.com/johnApplegate/thumbKit/blob/main/index.html" onclick="window.open(this.href); return false;">
+                    <img class="screen2" src="screenScreenshots/screenshotPT_code.png" alt="Description of the image">
+                </a>
+                <a href="https://github.com/johnApplegate/phoebeTattooist" onclick="window.open(this.href); return false;">
+                    <img class="screen3" src="screenScreenshots/screenshotPT_git.png" alt="Description of the image">
+                </a>
+            </div>
+
         </section>
-        
+
+        <section class="project_container" id="movieWorld">
+
+            <div class="project_content show">
+                <div class="pjt_no">03.</div>
+                <div class="site_name">Movie World</div>
+                <div class="description">Database App</div>
+                <div class="features">Key Features: Python code app to allow CRUD functionality on a SQLite Database. <br> Hosted on Replit with HTML/CSS designed interface</div>
+                <div class="tech used">
+                    <img src="icons8-sql-48.png" alt="" width="25px" height="25px">
+                    <img src="icons8-python-48.png" alt="" width="25px" height="25px">
+                    <img src="/HTML5_Badge.svg.png" alt="" width="25px" height="25px">
+                    <img src="/CSS3_logo.svg.png" alt="" width="25px" height="25px">
+                </div>
+            </div>
+
+            <div id="phones_container">
+                <a href="https://johnapplegate.github.io/phoebeTattooist/" onclick="window.open(this.href); return false;">
+                    <img class="screen1" src="screenScreenshots/ScreenshotMW_app.png" alt="Description of the image">
+                </a>
+                <a href="https://johnapplegate.github.io/phoebeTattooist/" onclick="window.open(this.href); return false;">
+                    <img class="screen2" src="screenScreenshots/ScreenshotMW_replit.png" alt="Description of the image">
+                </a>
+                <a href="https://github.com/johnApplegate/thumbKit/blob/main/index.html" onclick="window.open(this.href); return false;">
+                    <img class="screen3" src="screenScreenshots/ScreenshotMW_git.png" alt="Description of the image">
+                </a>
+            </div>
+
+        </section>
     </article>
 
     <section class="skills_container">
-            <div class="greyTitle">SKILLS</div>
+            <div class="greyTitle project_content show">SKILLS</div>
             <div class="languages">
                <div><br>JavaScript
                     <br>HTML &amp; CSS
@@ -115,11 +191,11 @@
 
     <footer class="footer_container">
 
-        <div class="greyTitle" id="contact_title">CONTACT</div>
+        <div class="greyTitle project_content show" id="contact_title">CONTACT</div>
 
             <div class="row">
                 <div class="col s6 m2">
-                    <a class="email_link" href="" target="_blank" rel="noopener noreferrer">
+                    <a class="email_link" href="mailto:japplegate511@gmail.com" target="_blank" rel="noopener noreferrer">
                         <img src="/mail.6c167f77.svg" alt="email" class="icon"></a>
                 </div>
                 <!-- <div class="col s6">
@@ -127,7 +203,7 @@
                     <img src="file-regular.svg" alt="cv_link" class="icon">
                 </div> -->
                 <div class="col s6 m2">
-                    <a class="linkedin_link" href="" target="_blank" rel="noopener noreferrer">
+                    <a class="linkedin_link" href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank" rel="noopener noreferrer">
                     <img src="/linkedin.a72ab8af.svg" alt="linkedin" class="icon"></a>
                 </div>
                 <div class="col s6 m2">
@@ -145,7 +221,7 @@
                     </a>
                 </div>
                 <div class="col s6 m2">
-                    <a class="linkedin_link" href="" target="_blank" rel="noopener noreferrer">
+                    <a class="linkedin_link" href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank" rel="noopener noreferrer">
                     <img src="/linkedin.a72ab8af.svg" alt="linkedin" class="icon"></a>
                 </div>
             </div>
@@ -155,5 +231,6 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </body>
 </html>
