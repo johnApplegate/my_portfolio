@@ -11,11 +11,12 @@
     <script src="pfl_script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins&family=Public+Sans:wght@300;400&family=Quicksand&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display&family=Permanent+Marker&family=Poppins&family=Public+Sans:wght@300;400&family=Quicksand&family=Roboto+Condensed&display=swapfamily=Cedarville+Cursive&family=Rock+Salt&display" rel="stylesheet">
 </head>
 
 <body>
-<div>
+<div class="custom-container">
+
     <header class="hdr">
 
         <div id="name" class="animate__animated animate__fadeInDown">
@@ -35,7 +36,7 @@
         </div>
         
         <div class="blurbContainer">
-            <div class="myBlurb">A London-based coder, <br>design junkie,  photographer <br> & vintage guitar enthusiast! <br>Passionate about all things tech, front-end development & javascript. 
+            <div class="myBlurb">A London-based coder <br> & vintage guitar enthusiast! <br>Passionate about front-end development, javascript & all things tech. 
                 <!-- <a href="mycv.com" target="_blank">Check out my CV!</a> -->
             </div>
         </div>
@@ -43,10 +44,6 @@
     </section>
 
     <div class="spacer">
-        <!-- <div class="parallax-container">
-            <div class="parallax"><img src="screenScreenshots/codeshot.png"></div>
-          </div> -->
-        <!-- <div class="greyTitle project_content show" id="project_title">PROJECTS</div> -->
     </div>
     
 
@@ -55,7 +52,7 @@
         <section class="project_container" id="thumbkit"> 
 
             <div class="project_content show">
-                <div class="pjt_no">02.</div>
+                <div class="pjt_no">01.</div>
                 <div class="site_name">Thumb-kit</div>
                 <div class="description">Interactive keyboard triggered realtime drum machine</div>
                 <div class="features">Key Features: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, quaerat?</div>
@@ -66,15 +63,18 @@
                 </div>
             </div>
             
-            <div class="parallax-container"  id="phones_container">
-                <a class="parallax" href="https://johnapplegate.github.io/thumbKit/" onclick="window.open(this.href); return false;">
-                    <img class="screen1" src="screenScreenshots/kitshot1.png" alt="Description of the image">
+            <div id="phones_container">
+                <a href="https://johnapplegate.github.io/thumbKit/" onclick="window.open(this.href); return false;">
+                    <img class="screen1" src="screenScreenshots/croppedKITgame1fix.png" alt="Description of the image">
                 </a>
                 <a href="https://johnapplegate.github.io/thumbKit/l" onclick="window.open(this.href); return false;">
-                    <img class="screen2" src="screenScreenshots/kitshot2.png" alt="Description of the image">
+                    <img class="screen2" src="screenScreenshots/croppedKITgame2.png" alt="Description of the image">
                 </a>
                 <a href="https://github.com/johnApplegate/thumbKit" onclick="window.open(this.href); return false;">
-                    <img class="screen3" src="screenScreenshots/kitGitShot.png" alt="Description of the image">
+                    <img class="screen3" src="screenScreenshots/croppedKITgit.png" alt="Description of the image">
+                </a>
+                <a href="https://github.com/johnApplegate/thumbKit" onclick="window.open(this.href); return false;">
+                    <img class="screen4" src="screenScreenshots/croppedCode.png" alt="Description of the image">
                 </a>
             </div>
 
@@ -83,26 +83,29 @@
         <section class="project_container" id="arcade">
             
             <div class="project_content show">
-                <div class="pjt_no">01.</div>
+                <div class="pjt_no">02.</div>
                 <div class="site_name">Space Invaders</div>
                 <div class="description">Retro space invaders game</div>
                 <div class="features">Key features: responsive, carousel, form, iframe, api.</div>
                 <div class="tech used">
-                    <img src="/HTML5_Badge.svg.png" alt="" width="25px" height="25px">
-                    <img src="/CSS3_logo.svg.png" alt="" width="25px" height="25px">
-                    <img src="/javascript-1.svg" alt="" width="25px" height="25px">
+                    <img src="HTML5_Badge.svg.png" alt="" width="25px" height="25px">
+                    <img src="CSS3_logo.svg.png" alt="" width="25px" height="25px">
+                    <img src="javascript-1.svg" alt="" width="25px" height="25px">
                 </div>
             </div>
             
             <div id="phones_container">
                 <a href="https://johnapplegate.github.io/space_invaders/" onclick="window.open(this.href); return false;">
-                    <img class="screen1" src="screenScreenshots/invadersshot.png" alt="Description of the image">
+                    <img class="screen1" src="screenScreenshots/croppedINVgameover.png" alt="Description of the image">
                 </a>
                 <a href="https://github.com/johnApplegate/space_invaders/blob/main/script.js/" onclick="window.open(this.href); return false;">
-                    <img class="screen2" src="screenScreenshots/invadersShot2.png" alt="Description of the image">
+                    <img class="screen2" src="screenScreenshots/croppedINVgame.png" alt="Description of the image">
                 </a>
                 <a href="https://github.com/johnApplegate/space_invaders" onclick="window.open(this.href); return false;">
-                    <img class="screen3" src="screenScreenshots/kitGitShot.png" alt="Description of the image">
+                    <img class="screen3" src="screenScreenshots/croppedCode.png" alt="Description of the image">
+                </a>
+                <a href="https://github.com/johnApplegate/space_invaders" onclick="window.open(this.href); return false;">
+                    <img class="screen4" src="screenScreenshots/croppedKITgit.png" alt="Description of the image">
                 </a>
             </div>
             
@@ -115,7 +118,7 @@
                 <div class="pjt_no">03.</div>
                 <div class="site_name">P.T. Ink</div>
                 <div class="description">Brochure and booking website for independent tattoo artist</div>
-                <div class="features">Key Features: Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Aspernatur odio porro repudiandae?</div>
+                <div class="features">Key Features: Mobile first responsivity, booking form, iframe, gallery, multi-page site</div>
                 <div class="tech used">
                     <img src="HTML5_Badge.svg.png" alt="" width="25px" height="25px">
                     <img src="CSS3_logo.svg.png" alt="" width="25px" height="25px">
@@ -125,16 +128,16 @@
 
             <div id="phones_container">
                 <a href="https://johnapplegate.github.io/phoebeTattooist/" onclick="window.open(this.href); return false;">
-                    <img class="screen1" src="screenScreenshots/Untitled design (6).png" alt="Description of the image">
+                    <img class="screen1" src="screenScreenshots/croppedPHEBBShero.png" alt="Description of the image">
                 </a>
                 <a href="https://johnapplegate.github.io/phoebeTattooist/" onclick="window.open(this.href); return false;">
-                    <img class="screen1" src="screenScreenshots/PTheroShot.png" alt="Description of the image">
+                    <img class="screen2" src="screenScreenshots/croppedPHEEBScover.png" alt="Description of the image">
                 </a>
                 <a href="https://github.com/johnApplegate/thumbKit/blob/main/index.html" onclick="window.open(this.href); return false;">
-                    <img class="screen2" src="screenScreenshots/PTbookShot.png" alt="Description of the image">
+                    <img class="screen3" src="screenScreenshots/croppedPHEEBSbook.png" alt="Description of the image">
                 </a>
                 <a href="https://github.com/johnApplegate/phoebeTattooist" onclick="window.open(this.href); return false;">
-                    <img class="screen3" src="screenScreenshots/kitGitShot.png" alt="Description of the image">
+                    <img class="screen4" src="screenScreenshots/croppedKITgit.png" alt="Description of the image">
                 </a>
             </div>
 
@@ -157,13 +160,16 @@
 
             <div id="phones_container">
                 <a href="https://johnapplegate.github.io/movieWorld_db_App/" onclick="window.open(this.href); return false;">
-                    <img class="screen1" src="screenScreenshots/movieshot.png" alt="Description of the image">
+                    <img class="screen1" src="screenScreenshots/croppedMOVIEapp.png" alt="Description of the image">
                 </a>
                 <a href="https://replit.com/@applegation/movieWorld" onclick="window.open(this.href); return false;">
-                    <img class="screen2" src="screenScreenshots/replitShot2.png" alt="Description of the image">
+                    <img class="screen2" src="screenScreenshots/croppedMOVIEreplit.png" alt="Description of the image">
                 </a>
                 <a href="https://github.com/johnApplegate/movieWorld_db_App" onclick="window.open(this.href); return false;">
-                    <img class="screen3" src="screenScreenshots/kitGitShot.png" alt="Description of the image">
+                    <img class="screen3" src="screenScreenshots/croppedMOVIEBlackCode.png" alt="Description of the image">
+                </a>
+                <a href="https://github.com/johnApplegate/movieWorld_db_App" onclick="window.open(this.href); return false;">
+                    <img class="screen4" src="screenScreenshots/croppedKITgit.png" alt="Description of the image">
                 </a>
             </div>
 
@@ -171,7 +177,7 @@
     </article>
 
     <section class="skills_container">
-            <div class="greyTitle project_content show">SKILLS</div>
+            <div class="greyTitle project_content show">SKILLSET</div>
             <div class="languages">
                <div><br>JavaScript
                     <br>HTML &amp; CSS
