@@ -30,7 +30,6 @@ header {
     -webkit-box-align: center;
     align-items: center;
     height: 45vh;
-    background-color: rgba(255, 255, 255, 0.894);
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.5rem;
     align-items: center;
@@ -51,7 +50,7 @@ header {
 
 .greyTitle {
     font-family: 'Poppins', sans-serif;
-    color: rgba(165, 165, 165, 0.525);
+    color: rgba(248, 238, 238, 0.945);
     position: absolute;
     font-size: 4rem;
     z-index: 0;
@@ -79,6 +78,10 @@ header {
     align-items: flex-end;
 }
 
+.blurbContainer {
+  width: 100%;
+}
+
 .myBlurb {
     font-size: 1rem;
     display: grid;
@@ -95,8 +98,8 @@ header {
 } */
 
 
-.project_container{
-    height: 180vh;
+.project_container {
+    height: 150vh;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -104,7 +107,7 @@ header {
 
 .project_content {
   transform: translateX(-150%);
-  transition: transform 1.2s ease;
+  transition: transform 1s ease;
 }
 .project_content.show {
   transform: translateX(0);
@@ -120,25 +123,33 @@ header {
   font-weight: bolder; 
   margin-bottom: 0.6rem;
 }
-  
+
+.description {
+  font-size: 2.5rem;
+  margin-bottom: 0.3rem;
+}
+
 .features {
+  font-size: 1.2rem;
   font-weight: lighter;
+  line-height: 1.3;
+  margin-bottom: 0.3rem;
 }
 
 
 #phones_container {
   width: 90vw; 
-  height: 80vh;  
+  height: 100vh;  
   position: relative; 
 }
 
 
 .screen1 {
-  z-index: 1;
-  height: 450px; /* Adjust the width as needed */
+  z-index: 4;
+  height: 500px; /* Adjust the width as needed */
   transition: transform 0.3s ease;
   position: absolute;
-  top: 45%; /* Adjust the vertical position as needed */
+  top: 30%; /* Adjust the vertical position as needed */
   right: 0%;
   transform: translate(0, -50%); /* Center vertically using transform */
 }
@@ -147,11 +158,11 @@ header {
 }
 
 .screen2 {
-  z-index: 2;
-  height: 350px; /* Adjust the width as needed */
+  z-index: 3;
+  height: 400px; /* Adjust the width as needed */
   transition: transform 0.3s ease;
   position: absolute;
-  top: 68%; /* Adjust the vertical position as needed */
+  top: 40%; /* Adjust the vertical position as needed */
   right: 45%;
   transform: translate(0, -50%); /* Center vertically using transform */
 }
@@ -160,12 +171,12 @@ header {
 }
 
 .screen3 {
-  z-index: 9;
-  height: 280px; /* Adjust the width as needed */
+  z-index: 2;
+  height: 350px; /* Adjust the width as needed */
   transition: transform 0.3s ease;
   position: absolute;
-  top: 110%; /* Adjust the vertical position as needed */
-  right: 10%;
+  top: 85%; /* Adjust the vertical position as needed */
+  right: 5%;
   transform: translate(0, -50%); /* Center vertically using transform */
 }
 .screen3:hover {
@@ -173,12 +184,12 @@ header {
 }
 
 .screen4 {
-  z-index: 9;
-  height: 280px; /* Adjust the width as needed */
+  z-index: 1;
+  height: 300px; /* Adjust the width as needed */
   transition: transform 0.3s ease;
   position: absolute;
-  top: 105%; /* Adjust the vertical position as needed */
-  right: 40%;
+  top: 78%; /* Adjust the vertical position as needed */
+  right: 45%;
   transform: translate(0, -50%); /* Center vertically using transform */
 }
 .screen4:hover {
@@ -186,15 +197,14 @@ header {
 }
 
 .skills_container {
-  height: 60vh;
+  height: 50vh;
   display: grid;
   align-items: flex-start;
   align-content: center;
 } 
   
 .languages {
-    height: 40vh;
-    margin: 1rem;
+    height: 40vh; 
     font-size: 1.5rem;
     display: flex;
     align-items: center;
@@ -202,33 +212,32 @@ header {
     z-index: 2;
   }
 
+
 .footer_container {
-    height: 50vh;
-    display: grid;
-    align-items: flex-start;
-    align-content: center;
+  height: 50vh;
+  display: grid;
+  align-items: flex-start;
+  align-content: center;
   }
 
-.contact_title {
-  position: relative;
-
-}
-
-/* .contact_icons {
-    z-index: 1;
+#contact_icons {
+    margin: 10%;
+    height: 30vh; 
+    width: 90vw;
+    font-size: 2rem;
     display: flex;
-    justify-content: center;
     align-items: center;
-  } */
-  
-/* .icon {
-    padding: 2rem;
-    display: grid;
-    grid-template: 80px 80px 80px / 1fr 1fr;
-  } */
+    justify-content: center;
+    z-index: 2;
+  }
+
+.icon {
+  ;
+}
 
 .cv_link {
   font-size: 4rem;
+  font-weight: bold;
   text-align: center;
   text-decoration: none;
   color: black;
@@ -238,9 +247,6 @@ header {
   text-align: center;
 }
 
-.parallax-container {
-  height: 100vh;
-}
 
 
 
@@ -269,25 +275,24 @@ header {
   }
 
   #name { 
-    font-size: 6rem;
+    font-size: 5rem;
   }
   
   #role {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   
 
   .aboutContainer {
     height: 50vh;
     position: relative;
-    display: flex;
-    /* justify-content: center; */
+    display: flow-root;
     align-items: center;
-    padding-bottom: 15rem;
+    /* padding-bottom: 15rem; */
   }
   
   .greyTitle {
-    font-size: 12rem;
+    font-size: 10rem;
   }
   
   .blurbContainer {
@@ -300,7 +305,7 @@ header {
     position: relative;
     text-align: end;
     margin-top: 19%;
-    margin-left: 40%;
+    margin-left: 20%;
     z-index: 2;
   }
   
@@ -315,45 +320,40 @@ header {
 } */
   
 .project_container{
-    width: 100%;
+    height: 180vh;
+    /* width: 100%; */
 }
   
 .site_name {
   font-size: 4rem;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .description {
-  font-size: 1.8rem;
+  font-size: 3rem;
 }
   
 .features {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: lighter;
 }
-  
-  
+
   .skills_container {
-    height: 80vh;
+    height: 50vh;
     display: grid;
     align-items: center;
     align-content: center;
   } 
-  
+
   .languages {
     height: 50vh;
-    margin: 1rem;
     font-size: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    z-index: 2;
   }
   
   .footer_container {
     height: 50vh;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    /* justify-content: center; */
     align-items: center;
   }
 
@@ -361,6 +361,11 @@ header {
   position: relative;
   align-items: left;
 }
+
+/* .row {
+  position: relative;
+  align-items: center;
+} */
   
   /* .contact_icons {
     z-index: 1;
@@ -373,47 +378,44 @@ header {
     padding: 3rem;
   } */
   
-  #screen_container {
-    /* width: 100vw; 
-    /* height: 100vh;  */
+  .phones_container {
+    width: 100vw; 
+    height: 150vh; 
     position: relative; 
   }
 
+.project_content {
+    width: 50%;
+}
   
   .screen1 {
-    height: 980px; /* Adjust the width as needed */
-    transition: transform 0.3s ease;
-    position: absolute;
-    top: 38%; /* Adjust the vertical position as needed */
+    height: 800px; /* Adjust the width as needed */
+    top: 30%; /* Adjust the vertical position as needed */
     right: 0%;
-    transform: translate(0, -50%); /* Center vertically using transform */
-  }
-  .screen1:hover {
-    transform: translate(0, -50%) scale(1.1);
   }
   
   .screen2 {
-    height: 850px; /* Adjust the width as needed */
-    transition: transform 0.3s ease;
-    position: absolute;
-    top: 48%; /* Adjust the vertical position as needed */
-    right: 45%;
-    transform: translate(0, -50%); /* Center vertically using transform */
-  }
-  .screen2:hover {
-    transform: translate(0, -50%) scale(1.1);
+    height: 650px; /* Adjust the width as needed */
+    top: 50%; /* Adjust the vertical position as needed */
+    right: 40%;
   }
   
   .screen3 {
-    height: 750px; /* Adjust the width as needed */
-    transition: transform 0.3s ease;
-    position: absolute;
-    top: 70%; /* Adjust the vertical position as needed */
-    right: 35%;
-    transform: translate(0, -50%); /* Center vertically using transform */
+    z-index: 1;
+    height: 500px; /* Adjust the width as needed */
+    top: 75%; /* Adjust the vertical position as needed */
+    right: 25%;
   }
-  .screen3:hover {
-    transform: translate(0, -50%) scale(1.1);
+
+  .screen4 {
+    z-index: 2;
+    height: 500px; /* Adjust the width as needed */
+    top: 87%; /* Adjust the vertical position as needed */
+    right: 57%;
+  }
+
+  .footer-icon {
+    padding: 15px;
   }
 
 }
