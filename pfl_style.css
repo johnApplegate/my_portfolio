@@ -29,7 +29,7 @@ header {
     justify-content: center;
     -webkit-box-align: center;
     align-items: center;
-    height: 45vh;
+    height: 40vh;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.5rem;
     align-items: center;
@@ -37,7 +37,7 @@ header {
 
 #name
   { 
-    font-size: 2rem;
+    font-size: 2.4rem;
     align-items: center;
     font-family: "Rock Salt", cursive;
     font-weight: 400;
@@ -45,7 +45,7 @@ header {
   }
 
 #role {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
 .greyTitle {
@@ -83,7 +83,7 @@ header {
 }
 
 .myBlurb {
-    font-size: 1rem;
+    font-size: 1.2rem;
     display: grid;
     position: relative;
     text-align: center;
@@ -146,7 +146,7 @@ header {
 
 .screen1 {
   z-index: 4;
-  height: 500px; /* Adjust the width as needed */
+  height: 650px; /* Adjust the width as needed */
   transition: transform 0.3s ease;
   position: absolute;
   top: 30%; /* Adjust the vertical position as needed */
@@ -158,12 +158,12 @@ header {
 }
 
 .screen2 {
-  z-index: 3;
-  height: 400px; /* Adjust the width as needed */
+  z-index: 2;
+  height: 550px; /* Adjust the width as needed */
   transition: transform 0.3s ease;
   position: absolute;
   top: 40%; /* Adjust the vertical position as needed */
-  right: 45%;
+  right: 52%;
   transform: translate(0, -50%); /* Center vertically using transform */
 }
 .screen2:hover {
@@ -171,11 +171,11 @@ header {
 }
 
 .screen3 {
-  z-index: 2;
-  height: 350px; /* Adjust the width as needed */
+  z-index: 1;
+  height: 550px; /* Adjust the width as needed */
   transition: transform 0.3s ease;
   position: absolute;
-  top: 85%; /* Adjust the vertical position as needed */
+  top: 88%; /* Adjust the vertical position as needed */
   right: 5%;
   transform: translate(0, -50%); /* Center vertically using transform */
 }
@@ -184,12 +184,12 @@ header {
 }
 
 .screen4 {
-  z-index: 1;
-  height: 300px; /* Adjust the width as needed */
+  z-index: 2;
+  height: 450px; /* Adjust the width as needed */
   transition: transform 0.3s ease;
   position: absolute;
-  top: 78%; /* Adjust the vertical position as needed */
-  right: 45%;
+  top: 82%; /* Adjust the vertical position as needed */
+  right: 43%;
   transform: translate(0, -50%); /* Center vertically using transform */
 }
 .screen4:hover {
@@ -395,20 +395,20 @@ header {
   }
   
   .screen2 {
-    height: 650px; /* Adjust the width as needed */
+    height: 600px; /* Adjust the width as needed */
     top: 50%; /* Adjust the vertical position as needed */
     right: 40%;
   }
   
   .screen3 {
-    z-index: 1;
-    height: 500px; /* Adjust the width as needed */
+    z-index: 3;
+    height: 700px; /* Adjust the width as needed */
     top: 75%; /* Adjust the vertical position as needed */
     right: 25%;
   }
 
   .screen4 {
-    z-index: 2;
+    z-index: 0;
     height: 500px; /* Adjust the width as needed */
     top: 87%; /* Adjust the vertical position as needed */
     right: 57%;
