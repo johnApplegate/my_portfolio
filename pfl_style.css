@@ -19,8 +19,10 @@ font-family: 'Poppins', sans-serif;
 
 .custom-container {
   width: 92%;
-  margin: 0 auto;
+  margin: 0.5rem auto;
 } 
+
+
 
 header {
     display: flex;
@@ -53,7 +55,7 @@ header {
     color: rgba(248, 238, 238, 0.945);
     position: absolute;
     font-size: 4rem;
-    z-index: 0;
+    z-index: -1;
     opacity: 0;
     /* transform: translateX(-100%);
     transition: opacity 0.5s ease, transform 2s ease; */
@@ -67,35 +69,27 @@ header {
 }
 
 
+
 .aboutContainer {
     height: 40vh;
-    display: flex;
-    flex-flow: row;
-    -webkit-box-pack: center;
-    /* justify-content: flex-start; */
-    /* -webkit-box-align: center; */
-    flex-wrap: wrap;
-    align-items: flex-end;
+    display: grid;
+    align-items: end;
 }
 
 .blurbContainer {
-  width: 100%;
+ padding: 1rem;
 }
 
 .myBlurb {
     font-size: 1.2rem;
-    display: grid;
-    position: relative;
-    text-align: center;
   }
+
+
 
 .spacer{
   height: 50vh;
 }
 
-/* #project_title {
-  height: 40vh;
-} */
 
 
 .project_container {
@@ -115,26 +109,29 @@ header {
 
 .pjt_no{
   height: 3rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .site_name {
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-weight: bolder; 
   margin-bottom: 0.6rem;
 }
 
 .description {
-  font-size: 2.5rem;
-  margin-bottom: 0.3rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
 }
 
 .features {
   font-size: 1.2rem;
-  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.638);
   line-height: 1.3;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.4rem;
 }
+
+
 
 
 #phones_container {
@@ -143,10 +140,9 @@ header {
   position: relative; 
 }
 
-
 .screen1 {
   z-index: 4;
-  height: 650px; /* Adjust the width as needed */
+  height: 460px; /* Adjust the width as needed */
   transition: transform 0.3s ease;
   position: absolute;
   top: 30%; /* Adjust the vertical position as needed */
@@ -154,47 +150,48 @@ header {
   transform: translate(0, -50%); /* Center vertically using transform */
 }
 .screen1:hover {
-  transform: translate(0, -50%) scale(1.2);
+  transform: translate(0, -50%) scale(1.1);
 }
 
 .screen2 {
   z-index: 2;
-  height: 550px; /* Adjust the width as needed */
+  height: 350px; /* Adjust the width as needed */
   transition: transform 0.3s ease;
   position: absolute;
   top: 40%; /* Adjust the vertical position as needed */
-  right: 52%;
+  right: 42%;
   transform: translate(0, -50%); /* Center vertically using transform */
 }
 .screen2:hover {
-  transform: translate(0, -50%) scale(1.2);
+  transform: translate(0, -50%) scale(1.1);
 }
 
 .screen3 {
-  z-index: 1;
-  height: 550px; /* Adjust the width as needed */
+  z-index: 3;
+  height: 400px; /* Adjust the width as needed */
   transition: transform 0.3s ease;
   position: absolute;
-  top: 88%; /* Adjust the vertical position as needed */
-  right: 5%;
+  top: 65%; /* Adjust the vertical position as needed */
+  right: 26%;
   transform: translate(0, -50%); /* Center vertically using transform */
 }
 .screen3:hover {
-  transform: translate(0, -50%) scale(1.2);
+  transform: translate(0, -50%) scale(1.1);
 }
 
 .screen4 {
-  z-index: 2;
-  height: 450px; /* Adjust the width as needed */
+  z-index: 1;
+  height: 270px; /* Adjust the width as needed */
   transition: transform 0.3s ease;
   position: absolute;
   top: 82%; /* Adjust the vertical position as needed */
-  right: 43%;
+  right: 65%;
   transform: translate(0, -50%); /* Center vertically using transform */
 }
 .screen4:hover {
-  transform: translate(0, -50%) scale(1.2);
+  transform: translate(0, -50%) scale(1.1);
 }
+
 
 .skills_container {
   height: 50vh;
@@ -205,7 +202,7 @@ header {
   
 .languages {
     height: 40vh; 
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -220,32 +217,29 @@ header {
   align-content: center;
   }
 
+.row {
+  align-items: center;
+}
+
 #contact_icons {
-    margin: 10%;
-    height: 30vh; 
-    width: 90vw;
-    font-size: 2rem;
-    display: flex;
+    margin-left: 25%;
+    height: 21vh;
+    width: 54vw;
+    font-size: 1.2rem;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     z-index: 2;
   }
 
-.icon {
-  ;
-}
+.grow { 
+  transition: all .2s ease-in-out; 
+  }
 
-.cv_link {
-  font-size: 4rem;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-}
+.grow:hover { 
+  transform: scale(1.2); 
+  }
 
-.email_link {
-  text-align: center;
-}
 
 
 
@@ -263,7 +257,7 @@ header {
 
 
 
-/* THIS IS THE STYLE ONCE THE SCREEN HITS 993 PIXELS WIDTH */
+/* THIS IS THE STYLE ONCE THE SCREEN HITS 663 PIXELS WIDTH */
 @media only screen and (min-width: 663px){ 
  
   header {
@@ -282,6 +276,7 @@ header {
     font-size: 2rem;
   }
   
+
 
   .aboutContainer {
     height: 50vh;
@@ -305,7 +300,7 @@ header {
     position: relative;
     text-align: end;
     margin-top: 19%;
-    margin-left: 20%;
+    margin-left: 10%;
     z-index: 2;
   }
   
@@ -315,10 +310,12 @@ header {
     width: 100%;
   }
  
-/* .spacer {
-  height: 30vh;
-} */
-  
+.project_content {
+    width: 55%;
+}
+
+
+
 .project_container{
     height: 180vh;
     /* width: 100%; */
@@ -330,13 +327,45 @@ header {
 }
 
 .description {
-  font-size: 3rem;
+  font-size: 2rem;
 }
   
 .features {
   font-size: 2rem;
-  font-weight: lighter;
 }
+
+
+
+.phones_container {
+  width: 100vw; 
+  height: 150vh; 
+  position: relative; 
+}
+  .screen1 {
+    height: 700px; /* Adjust the width as needed */
+    top: 30%; /* Adjust the vertical position as needed */
+    right: 5%;
+  }
+  
+  .screen2 {
+    height: 550px; /* Adjust the width as needed */
+    top: 50%; /* Adjust the vertical position as needed */
+    right: 40%;
+  }
+  
+  .screen3 {
+    z-index: 3;
+    height: 650px; /* Adjust the width as needed */
+    top: 75%; /* Adjust the vertical position as needed */
+    right: 24%;
+  }
+
+  .screen4 {
+    height: 500px; /* Adjust the width as needed */
+    top: 87%; /* Adjust the vertical position as needed */
+    right: 56%;
+  }
+
 
   .skills_container {
     height: 50vh;
@@ -362,83 +391,8 @@ header {
   align-items: left;
 }
 
-/* .row {
-  position: relative;
-  align-items: center;
-} */
-  
-  /* .contact_icons {
-    z-index: 1;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  } */
-  
-  /* .icon {
-    padding: 3rem;
-  } */
-  
-  .phones_container {
-    width: 100vw; 
-    height: 150vh; 
-    position: relative; 
-  }
-
-.project_content {
-    width: 50%;
-}
-  
-  .screen1 {
-    height: 800px; /* Adjust the width as needed */
-    top: 30%; /* Adjust the vertical position as needed */
-    right: 0%;
-  }
-  
-  .screen2 {
-    height: 600px; /* Adjust the width as needed */
-    top: 50%; /* Adjust the vertical position as needed */
-    right: 40%;
-  }
-  
-  .screen3 {
-    z-index: 3;
-    height: 700px; /* Adjust the width as needed */
-    top: 75%; /* Adjust the vertical position as needed */
-    right: 25%;
-  }
-
-  .screen4 {
-    z-index: 0;
-    height: 500px; /* Adjust the width as needed */
-    top: 87%; /* Adjust the vertical position as needed */
-    right: 57%;
-  }
-
   .footer-icon {
     padding: 15px;
   }
 
 }
-
-  /* @media only screen and (max-width: 600px) {
-    header h1  {font-size: 2.4rem;}
-  } */
-  
-  /* @media only screen and (min-width: 601px) {
-    header h1  {font-size: 5rem;}
-    .role {font-size: 4rem;}
-    .greyTitle {font-size: 8rem}
-    .myBlurb {font-size: 2rem;}
-  }
-  @media only screen and (min-width: 993px){
-    header h1  {font-size: 6rem;} 
-    .role {font-size: 5rem;}
-    .greyTitle {font-size: 10rem}
-    .myBlurb {font-size: 2rem;}
-  }
-  @media only screen and (min-width: 1201px){
-    header h1 {font-size: 8rem;}
-    .role {font-size: 6rem;}
-    .greyTitle {font-size: 12rem}
-    .myBlurb {font-size: 2rem;}
-  }  */
