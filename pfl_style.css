@@ -78,6 +78,7 @@ header {
 
 .blurbContainer {
  padding: 1rem;
+ justify-content: flex-end
 }
 
 .myBlurb {
@@ -171,7 +172,7 @@ header {
   height: 400px; /* Adjust the width as needed */
   transition: transform 0.3s ease;
   position: absolute;
-  top: 65%; /* Adjust the vertical position as needed */
+  top: 75%; /* Adjust the vertical position as needed */
   right: 26%;
   transform: translate(0, -50%); /* Center vertically using transform */
 }
@@ -191,6 +192,8 @@ header {
 .screen4:hover {
   transform: translate(0, -50%) scale(1.1);
 }
+
+
 
 
 .skills_container {
@@ -342,26 +345,26 @@ header {
   position: relative; 
 }
   .screen1 {
-    height: 700px; /* Adjust the width as needed */
+    height: 720px; /* Adjust the width as needed */
     top: 30%; /* Adjust the vertical position as needed */
-    right: 5%;
+    right: 7%;
   }
   
   .screen2 {
-    height: 550px; /* Adjust the width as needed */
+    height: 650px; /* Adjust the width as needed */
     top: 50%; /* Adjust the vertical position as needed */
     right: 40%;
   }
   
   .screen3 {
     z-index: 3;
-    height: 650px; /* Adjust the width as needed */
+    height: 700px; /* Adjust the width as needed */
     top: 75%; /* Adjust the vertical position as needed */
-    right: 24%;
+    right: 20%;
   }
 
   .screen4 {
-    height: 500px; /* Adjust the width as needed */
+    height: 550px; /* Adjust the width as needed */
     top: 87%; /* Adjust the vertical position as needed */
     right: 56%;
   }
