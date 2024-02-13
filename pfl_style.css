@@ -272,7 +272,7 @@ header {
   }
 
   #name { 
-    font-size: 5rem;
+    font-size: 4rem;
   }
   
   #role {
@@ -345,26 +345,26 @@ header {
   position: relative; 
 }
   .screen1 {
-    height: 720px; /* Adjust the width as needed */
+    height: 600px; /* Adjust the width as needed */
     top: 30%; /* Adjust the vertical position as needed */
     right: 7%;
   }
   
   .screen2 {
-    height: 650px; /* Adjust the width as needed */
+    height: 500px; /* Adjust the width as needed */
     top: 50%; /* Adjust the vertical position as needed */
     right: 40%;
   }
   
   .screen3 {
     z-index: 3;
-    height: 700px; /* Adjust the width as needed */
+    height: 550px; /* Adjust the width as needed */
     top: 75%; /* Adjust the vertical position as needed */
     right: 20%;
   }
 
   .screen4 {
-    height: 550px; /* Adjust the width as needed */
+    height: 440px; /* Adjust the width as needed */
     top: 87%; /* Adjust the vertical position as needed */
     right: 56%;
   }
