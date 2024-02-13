@@ -272,11 +272,11 @@ header {
   }
 
   #name { 
-    font-size: 4rem;
+    font-size: 3rem;
   }
   
   #role {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   
 
@@ -298,7 +298,7 @@ header {
   }
   
   .myBlurb {
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: block;
     position: relative;
     text-align: end;
@@ -313,35 +313,35 @@ header {
     width: 100%;
   }
  
-.project_content {
+
+
+  .project_content {
     width: 55%;
 }
 
-
-
 .project_container{
-    height: 180vh;
+    height: 200vh;
     /* width: 100%; */
 }
   
 .site_name {
-  font-size: 4rem;
+  font-size: 3rem;
   /* font-weight: bold; */
 }
 
 .description {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
   
 .features {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 
 
 .phones_container {
   width: 100vw; 
-  height: 150vh; 
+  /* height: 2000vh;  */
   position: relative; 
 }
   .screen1 {
